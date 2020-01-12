@@ -23,7 +23,7 @@ namespace WebApplication4
             container.RegisterType<IUserStore<User>, UserStore<User>>();
             container.RegisterType<UserManager<User>>();
             container.RegisterType<DbContext, MyDbContext>();
-            container.RegisterType<ApplicationUserManager>();
+            container.RegisterType<IdentityConfig.ApplicationUserManager>();
         }
     }
 }

@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Role</h2>
+@using (Html.BeginForm("Store", "Roles", FormMethod.Post))
+{
+    <div>Create Role<input type="text" name="CreatRole" class=""/>
+        <input type="submit" name="submit" class=""/></div>
+}

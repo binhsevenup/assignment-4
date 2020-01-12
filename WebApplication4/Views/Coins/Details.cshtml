@@ -1,0 +1,90 @@
+﻿@model WebApplication4.Models.Coin
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Coin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Market.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Market.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseAsset)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseAsset)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quoteAsset)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quoteAsset)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.volumn24h)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.volumn24h)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deletedAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deletedAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CoinId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

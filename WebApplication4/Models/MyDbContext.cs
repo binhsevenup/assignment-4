@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace WebApplication4.Models
 {
@@ -20,8 +21,8 @@ namespace WebApplication4.Models
             return new MyDbContext();
         }
 
-        public System.Data.Entity.DbSet<WebApplication4.Models.Coin> Coins { get; set; }
-        public System.Data.Entity.DbSet<WebApplication4.Models.Market> M { get; set; }
+        public DbSet<Coin> Coins { get; set; }
+        public DbSet<Market> Markets { get; set; }
 
     }
 }

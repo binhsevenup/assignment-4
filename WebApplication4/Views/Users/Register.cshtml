@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+@using (Html.BeginForm("ProcessRegister", "Users", FormMethod.Post))
+{
+
+    <div>
+        FullName: <input type="text" name="fullName" value="" />
+    </div>
+    <div>
+        Email: <input type="text" name="email" value="" />
+    </div>
+    <div>
+        UserName: <input type="text" name="userName" value="" />
+    </div>
+    <div>
+        Password: <input type="password" name="password" value="" />
+    </div>
+    <div>
+        Phone Number: <input type="number" name="phoneNumber" value="" />
+    </div>
+    <div>
+        <input type="submit" name="Submit" value="submit" />
+    </div>
+}
